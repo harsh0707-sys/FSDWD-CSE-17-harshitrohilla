@@ -12,3 +12,6 @@ caption{
 body{
         text-align: center;
     }
+th{
+    background-color: lightblue;
+    font-size: 20px;}
