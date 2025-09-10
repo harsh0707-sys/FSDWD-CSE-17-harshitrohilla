@@ -1,0 +1,14 @@
+tr > td {
+    background-color:gray;
+
+}
+caption{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: underline;
+    box-shadow:2px 2px 2px grey;}
+body{
+        text-align: center;
+    }
