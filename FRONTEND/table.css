@@ -1,17 +1,21 @@
-tr > td {
-    background-color:gray;
+.table td {
+    background:linear-gradient(to right,white,blue);
 
 }
 caption{
+    background:linear-gradient(white,white,blue);
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
     color: black;
     text-decoration: underline;
-    box-shadow:2px 2px 2px grey;}
+    box-shadow:2px 2px 2px grey;
+text-shadow:2px 2px 5px rgb(16, 2, 2) ;}
 body{
         text-align: center;
     }
 th{
-    background-color: lightblue;
+    background-color: blue;
     font-size: 20px;}
+
+

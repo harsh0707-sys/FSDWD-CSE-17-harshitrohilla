@@ -1,0 +1,109 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Set default font for the body */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 4cm;
+    height: 4cm;
+    border-radius: 50%;
+}
+/* Large, faded background name styling */
+.name-background {
+    position: absolute;
+    font-size: clamp(8rem, 20vw, 24rem); /* Responsive font size */
+    font-weight: 700;
+    color: rgba(55, 65, 81, 0.1); /* Light gray with opacity */
+    z-index: 0;
+    user-select: none; /* Prevent text selection */
+    pointer-events: none; /* Ignore mouse events */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+
+/* Section container styling */
+.section {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Card component styling */
+.card {
+    background: rgba(31, 41, 55, 0.8); /* Semi-transparent dark background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(75, 85, 99, 0.3); /* Subtle border */
+}
+
+/* Navigation link transition */
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+/* Navigation link hover effect */
+.nav-link:hover {
+    color: #8b5cf6; /* Change color on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Project card transition */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03); /* Lift up and slightly scale */
+    box-shadow: 0 25px 40px rgba(128, 159, 255, 0.35), 0 2px 8px rgba(31, 41, 55, 0.15); /* Layered shadow for depth */
+    background: rgba(55, 65, 81, 0.92); /* Slightly lighter background */
+    transition: 
+        transform 0.3s cubic-bezier(0.4,0,0.2,1),
+        box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),
+        border-color 0.3s,
+        background 0.3s;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .name-background {
+        font-size: clamp(4rem, 15vw, 8rem); /* Smaller font size */
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        font-size: 4rem;
+    }
+}
+
+/* Enable smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937; /* Dark track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8b5cf6; /* Purple thumb */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed; /* Darker purple on hover */
+}
