@@ -1,11 +1,14 @@
-
+ html{
+    font-family: serif, sans-serif;
+ }
 body 
 {
-    background-color: #cc99ff;
+   /* background-color: #cc99ff;
     background-image:url(zebra.jpg) ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     text-align: center;
+    background-color: #444;
     
 }
 .style{
@@ -15,9 +18,9 @@ body
     margin: auto;
 
     
-}
+}/*
 #foo{
-    color: green;;
+    color: green;
 }
 [id="foo"]{
     color: white;}
@@ -29,16 +32,58 @@ body
 div h2{
     color: rgb(255, 255, 255);
    
+}*/
+a
+{
+    background-color: turquoise;
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color :blue;
+    text-transform: uppercase;
+}
+h1{
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Macondo',serif,sans-serif;
 }
 h2{
-    color:#00ccff !important;
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Bebas+Neue'serif,sans-serif;
 }
-h1,h2 ,h3 , ul li
+h3{
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Open+Sans:ital,wght@0,300..800;1,300..800&display=swap';
+}
+
+    
+
+/*h1,h2 ,h3 ,.content
 {
     color: rgb(0, 6, 0);
     text-shadow: 2px 2px 1px rgb(183, 21, 21);
     font-family:  sans-serif;
     line-height: 1.5rem;
+    font-style: italic;
+
+   
+   
+}
+h2
+{
+    font-size: 30px;
+    color: azure;
+    font-style: normal;
+}*/
+.content
+{
+    color: rgb(0, 6, 0);
+    text-shadow: 2px 2px 1px rgb(183, 21, 21);
+    font-family:  sans-serif;
+    line-height: 1.5rem;
+    font-style: italic;
 
    
    
@@ -101,4 +146,9 @@ ul > li {
     margin: auto;
     box-shadow: black 2px 2px 12px;
 
+}
+.formating{
+  font-size: 30px;
+  line-height: 2em;
+  color: white;
 }
