@@ -84,9 +84,14 @@ ul.topnav li.dropdownIcon{
     background: -moz-linear-gradient(#076dff,#65a5ff); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#076dff,#65a5ff); /* Standard syntax */  
 }
-.leftside-col{
+div.leftside-col{
     margin-left: 30%;
 }
+div.rightside-col{
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
 h1.large{
     color: #ffffff;
     font-size: 50px;
@@ -98,6 +103,7 @@ input[type="text"]{
     width: 400px;
     min-width: 100px;
     padding: 5px;
+    border-radius: 7px;
 }
 form h2{
     color:#ffffff;
@@ -131,5 +137,32 @@ form h2{
         text-align: left;
        
     }
-
+    div.leftside-col{
+        margin-left: 15px
+    }
+     div.rightside-col{
+        margin: 15px;
+     }
+    .videocontainer {
+        position: relative;
+        width:100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+}
+@media screen and (max-width:1056px){
+    iframe{
+        width: 100%;
+        height: auto;
+        align-content: center;
+    }
+    input[type="text"]{
+        width: 90%;
+    }
+    .col-6{
+        width: 100%;
+        margin-top: 0;
+    }
+    
 }

@@ -20,14 +20,14 @@
     </nav>
     <div class="container" id="section-1-gradient">
         <div class="row">
-            <div class="col-6 leftside-col">
-                <div>
+            <div class="col-6">
+                <div class="leftside-col">
                     <h1 class="large">Crazy Radness</h1>
                     <h1 class="large">Made for Devlopers</h1>
 
                 </div>
                 <form >
-                    <div>
+                    <div class="leftside-col">
                         <h2>username</h2>
                         <input class="inputbox" name="username" type="text" placeholder="Enter username">
                         <h2>Password</h2>
@@ -36,6 +36,11 @@
                 </form>
             </div>
             <div class="col-6">
+                <div class="rightside-col">
+                    <div class="videocontainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T_1vKa7uGkM?si=j582SrH-FGx50-FN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
 
             </div>
 
@@ -46,12 +51,12 @@
 
     <script>
       function dropdownMenu() {
-        var x = document.getElementbyId("dropdownclick");
-        if(x.classname === "topnav"){
-            x.classname += " responsive";
+        var x = document.getElementById("dropdownclick");
+        if(x.className === "topnav"){
+            x.className += "responsive";
         }
          else{
-            x.classname = "topnav";
+            x.className = "topnav";
         }
       }
     </script>
