@@ -40,3 +40,38 @@ ul.topnav li a:hover{
     background-color: #0080ff;
     color: #ffffff;
 }
+ul.topnav li.dropdownIcon{
+    display: none;
+    }
+
+
+
+/*############## Mobile ##############*/
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon{
+        float: right;
+        display: block;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+       
+    }
+
+}
