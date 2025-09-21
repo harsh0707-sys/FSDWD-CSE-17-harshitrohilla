@@ -8,16 +8,25 @@ footer{
     line-height: 1;
     margin: 0;
  }
+ label{
+    font-size: 35px;
+    font-weight: 600;
+ }
+ p{
+    font-size: 20px;
+    line-height: 1.2;
+ }
  .container{
     width: 100%;
     margin: auto;
     padding-top: 4%;
     padding-bottom: 4%;
+    
  }
  .row{
     display: flex;
     width: 100% ;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
     align-items: center;
  }
  .row::after{
@@ -38,6 +47,9 @@ footer{
 .col-11{width:91.66%;}
 .col-12{width:100%;}
 
+*{
+    box-sizing: border-box;
+}
  
  /*############## NAV BAR ##############*/
  nav{
@@ -109,6 +121,34 @@ form h2{
     color:#ffffff;
 
 }
+.button{
+    width: 50%;
+    margin-top: 8%;
+    margin-left:15%;
+    border-radius: 7px ;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.button:hover{
+    background-color:rgb(254, 4, 41);
+}
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color:#0069ff ;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+button.learnmore{
+    display: block;
+    margin: auto;
+}
 
 /*############## Mobile ##############*/
 @media screen and (max-width:680px) {
@@ -149,6 +189,18 @@ form h2{
         margin: 0;
         overflow: hidden;
     }
+    h1.section2header{
+        font-size: 5px;
+    }
+    .col-6,
+    .col-4{
+        width: 100%;
+        margin: 0;
+    }
+    div.box{
+        padding: 5px;
+        display: block;
+    }
     
 }
 @media screen and (max-width:1056px){
@@ -164,5 +216,25 @@ form h2{
         width: 100%;
         margin-top: 0;
     }
+    .button{
+        margin-left: 25%;
+        text-align: center;
+    }
     
+}
+h1.section2header{
+    font-size:60px;
+    text-align: center;
+    
+}
+div.box{
+    background-color: #ffffff;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px 0 rgba(0,0,0,.1) ;
+    text-align: center;
+}
+div.icon{
+    width: 100%;
 }
