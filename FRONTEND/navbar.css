@@ -16,6 +16,12 @@ footer{
     font-size: 20px;
     line-height: 1.2;
  }
+ article p {
+     font-size: 35px;
+     padding: 20px;
+ }
+ 
+     
  .container{
     width: 100%;
     margin: auto;
@@ -121,6 +127,12 @@ form h2{
     color:#ffffff;
 
 }
+div.slopeicon img{
+    display: block;
+    margin:auto;
+    box-shadow: -2px/*h*/ -2px/*v*/ 5px/*b*/ 2px/*s*/ rgba(0/*sh*/,0/*bg*/,0/*bx*/,1/*op*/), 2px 2px 17px 2px rgba(0,0,0,1);
+   
+}
 .button{
     width: 50%;
     margin-top: 8%;
@@ -148,6 +160,21 @@ button{
 button.learnmore{
     display: block;
     margin: auto;
+}
+h1.section2header{
+    font-size:60px;
+    text-align: center;}
+    
+div.box{
+    background-color: #ffffff;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px 0 rgba(0,0,0,.1) ;
+    text-align: center;
+}
+div.icon{
+    width: 100%;
 }
 
 /*############## Mobile ##############*/
@@ -189,18 +216,26 @@ button.learnmore{
         margin: 0;
         overflow: hidden;
     }
-    h1.section2header{
-        font-size: 5px;
-    }
+    
+    .col-7,
+    .col-5,
     .col-6,
     .col-4{
         width: 100%;
         margin: 0;
+       
     }
     div.box{
         padding: 5px;
         display: block;
     }
+    div.slopeicon img{
+        width: 100%;
+        
+    }
+    
+    
+   
     
 }
 @media screen and (max-width:1056px){
@@ -222,19 +257,10 @@ button.learnmore{
     }
     
 }
-h1.section2header{
-    font-size:60px;
-    text-align: center;
+@media screen and (max-width:400px){
+    h1.section2header{
+        font-size:unset;
+    }
+}
     
-}
-div.box{
-    background-color: #ffffff;
-    margin: 24px;
-    padding: 36px 24px 40px 24px;
-    border-radius: 7px;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px 0 rgba(0,0,0,.1) ;
-    text-align: center;
-}
-div.icon{
-    width: 100%;
-}
+

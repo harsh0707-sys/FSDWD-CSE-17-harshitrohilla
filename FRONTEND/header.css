@@ -1,0 +1,53 @@
+nav,
+header{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin: 0;
+}
+nav ul{
+    background-color:blanchedalmond;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li a {
+    background-color: blanchedalmond;
+    text-decoration: none;
+    color: #666;
+    width: 100%;
+}
+div{
+    background-color: blanchedalmond ;
+}
+button{
+    margin-top: 9px;
+    border-radius: 29px;
+}
+*{
+    box-sizing: border-box;
+}
+ul.topnav li{
+        float: left;
+        list-style: none;
+    }
+ ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}    
+ul.topnav li a:hover{
+    background-color: #0080ff;
+    color: #ffffff;
+}
+.search{
+    margin-top:10px ;
+
+}
