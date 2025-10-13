@@ -4,6 +4,7 @@
 <head>
   <title>University Portal</title>
   <style>
+    
     table {
       width: 100%;
       border-collapse: collapse;
@@ -14,43 +15,67 @@
       padding: 10px;
       text-align: center;
     }
+    tr.color{
+      background-color: #ccc;
+    }
+     
     .header {
       background-color: #f8cba6;
       font-weight: bold;
+      
     }
     .nav {
       background-color: #ffe5d0;
+      
     }
     .dept {
       background-color: #f0f0f0;
       font-weight: bold;
+      
+      
     }
     .description {
       background-color: #fff8e1;
     } 
+    a.button{
+      text-decoration: none;
+      color: black;
+      margin: auto;
+      width: 20px;
+    }
     img.img{
       width: 40px;
     }
+
+   
   </style>
 </head>
 <body>
+    
+
 
 <table>
   <tr>
-    <td class="header"><img src="download.webp" alt="" class="img"></td>
+    <td  class="header"><img src="download.webp" alt="" class="img"></td>
     <td colspan="5" class="header">Web Site Name</td>
   </tr>
   <tr>
     <td class="nav">Home</td>
     <td class="nav">Login</td>
-    <td class="nav">Registration</td>
+    <td class="nav" colspan="2">Registration</td>
     <td class="nav">Catalogue</td>
     <td class="nav">Cart</td>
   </tr>
-
-  <tr>
+  <tr class="color">
     <td class="dept">CSE</td>
-    <td colspan="5" rowspan="4" class="description">DESCRIPTION OF THE WEBSITE</td>
+   <td rowspan="4" colspan="1">  
+   <div><b>BOOK NAME</b><br><br>
+    JAVA2 <br>XML Bible <br><br>Total Amount</div> 
+   </td>
+   <td rowspan="4" colspan="1"><div><b>PRICE</b><br><br>$35.5 <br>$40.5<br><br>-$111.5</div> </td>
+   <td rowspan="4"><div><b>QUANTITY</b><br><br>2 <BR>1</BR><br><br></div></td>
+   <td rowspan="4" colspan="2"><div><b>AMOUNT</b><br> <br>$71 <br>$40.5 <br><br><br></div></td>
+   
   </tr>
   <tr>
     <td class="dept">ECE</td>
@@ -61,7 +86,8 @@
   <tr>
     <td class="dept">Civil</td>
   </tr>
-</table>
 
+</table>
 </body>
+
 </html>
