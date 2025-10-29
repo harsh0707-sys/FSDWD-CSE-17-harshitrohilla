@@ -1,10 +1,9 @@
 
 h1 {
-    text-decoration: underline;
-    
+    text-decoration: underline; 
 }
 p{
     text-align: justify;
     color: brown;
-    
+    font-weight: 900;
 }
